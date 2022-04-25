@@ -137,7 +137,7 @@ img{
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: var(--body-color);
   z-index: var(--z-fixed);
   border-color: var(--body-color);
   box-shadow: 0 -1px 4px rgba(0,0,0,.1);
@@ -164,6 +164,9 @@ img{
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
     transform: .3s;
+  }
+  .change-theme{
+    right: 2rem;
   }
 }
 
@@ -230,15 +233,17 @@ img{
 }
 
 .home__img{
-  width: 120px;
-  height: 120px;
+  width: 170px;
+  height: 170px;
+  border-image-width: 10px;
   border-radius: 50%;
   justify-self: center;
   margin-bottom: var(--mb-1);
+  margin-top: var(--mb-3);
 }
 
 .home__title{
-  font-size: var(--h1-font-size);
+  font-size: var(--h2-font-size);
 }
 
 .home__profession{
@@ -448,6 +453,7 @@ img{
   visibility: visible;
   bottom: 5rem;
 }
+
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
 @media screen and (max-width: 320px) {
@@ -456,6 +462,7 @@ img{
     gap: 1rem .5rem;
 
   }  
+ 
 }
 
 
@@ -463,7 +470,7 @@ img{
 /* Classes modified for large screen size */
 @media screen and (min-width: 968px) {
   body{
-    margin: 3rem 0;
+    margin: 5rem 15rem;
   }
   
   .bd-container{
